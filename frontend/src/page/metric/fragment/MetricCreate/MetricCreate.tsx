@@ -3,6 +3,7 @@ import { Box } from "../../../../components/Box/Box";
 import { FormControl } from "../../../../components/FormControl/FormControl";
 import { SubmitButton } from "../../../../components/Button/Button";
 import { metricService } from "../../../../service/MetricService";
+import { Label } from "../../../../components/Label/Label";
 
 interface MetricCreateProps {
   onSave: () => void;
@@ -31,7 +32,7 @@ export const MetricCreate: React.FC<MetricCreateProps> = ({ onSave }) => {
     <Box>
       <form onSubmit={handleSubmit}>
         <FormControl>
-          <label>Name</label>
+          <Label>Name</Label>
           <input
             id="name"
             type="text"
@@ -40,7 +41,7 @@ export const MetricCreate: React.FC<MetricCreateProps> = ({ onSave }) => {
           />
         </FormControl>
         <FormControl>
-          <label>Value</label>
+          <Label>Value</Label>
           <input
             id="value"
             type="number"
@@ -49,7 +50,7 @@ export const MetricCreate: React.FC<MetricCreateProps> = ({ onSave }) => {
           />
         </FormControl>
         <FormControl>
-          <label>Timestamp</label>
+          <Label>Timestamp</Label>
           <input
             type="datetime-local"
             id="timestampInput"

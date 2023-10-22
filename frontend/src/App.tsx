@@ -9,15 +9,15 @@ const GlobalStyles = createGlobalStyle`
 
   *  {
     box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
   }
 
   body {    
     background: #ffffff;    
     color: #010605;    
     margin: 0;
-    padding: 0;    
+    padding: 0;        
   }
-
 `;
 
 function App() {

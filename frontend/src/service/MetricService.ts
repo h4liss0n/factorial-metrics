@@ -57,6 +57,8 @@ class MetricServiceLocal implements MetricServiceInterface {
   }
 }
 
-export const metricService = process.env.REACT_APP_FF_USE_LOCAL
-  ? new MetricServiceLocal()
-  : new MetricServiceApi();
+const useRemoteApi = process.env.REACT_APP_FF_USE_REMOTE_API !== undefined;
+
+export const metricService = useRemoteApi
+  ? new MetricServiceApi()
+  : new MetricServiceLocal();

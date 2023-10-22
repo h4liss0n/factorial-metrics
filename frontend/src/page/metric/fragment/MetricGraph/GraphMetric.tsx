@@ -13,6 +13,8 @@ import { Box } from "../../../../components/Box/Box";
 import { Metric } from "../../../../model/metric";
 import { groupMetricBy } from "../../../../service/GraphService";
 import { useMemo, useState } from "react";
+import { Select } from "../../../../components/Select/Select";
+import { Label } from "../../../../components/Label/Label";
 
 ChartJS.register(
   CategoryScale,
@@ -84,13 +86,13 @@ export const GraphMetric: React.FC<GraphMetricProps> = ({ metrics }) => {
       <main>
         <Line options={options} data={data} />
       </main>
-      <footer>
-        <label htmlFor="filter">filter: </label>
-        <select name="filter" onChange={handleChangeGroupBy} value={groupBy}>
+      <footer style={{ padding: "10px" }}>
+        <Label htmlFor="filter">Group by: </Label>
+        <Select name="filter" onChange={handleChangeGroupBy} value={groupBy}>
           <option value="day">day</option>
           <option value="hour">hour</option>
           <option value="minute">minute</option>
-        </select>
+        </Select>
       </footer>
     </Box>
   );

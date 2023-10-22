@@ -5,5 +5,5 @@ export const Box = styled.section`
   max-width: 900px;
   margin: 2rem auto;
   border-radius: 4px;
-  background-color: #ffffff;
+  background-color: transparent;
 `;
