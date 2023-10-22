@@ -1,13 +1,9 @@
 import { ThemeProvider, createGlobalStyle } from "styled-components";
 import { MetricPage } from "./page/metric/MetricPage";
 
-
-
-
 const theme = {
-  main: "mediumseagreen"
+  main: "mediumseagreen",
 };
-
 
 const GlobalStyles = createGlobalStyle`
 
@@ -24,9 +20,7 @@ const GlobalStyles = createGlobalStyle`
 
 `;
 
-
 function App() {
-
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
