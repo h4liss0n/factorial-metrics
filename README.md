@@ -19,7 +19,7 @@ access by: https://h4liss0n.github.io/factorial-metrics
   - typescript 
   - styled-components 
 
-## How to use un you local machine
+## How to use un your local machine
 
     use DBeaver to create a database locally
     port    :  5432,    
@@ -35,3 +35,4 @@ access by: https://h4liss0n.github.io/factorial-metrics
 	  - go to the frontend folder
 		  - got to .env and define # REACT_APP_FF_USE_REMOTE_API=true
 		  - npm start
+		  - open your browser http://localhost:3000/
