@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/factorial-metrics/static/js/main.d2c521e8.js",
+    "main.js": "/factorial-metrics/static/js/main.7002a3bb.js",
     "static/js/787.b253d5fb.chunk.js": "/factorial-metrics/static/js/787.b253d5fb.chunk.js",
     "index.html": "/factorial-metrics/index.html",
-    "main.d2c521e8.js.map": "/factorial-metrics/static/js/main.d2c521e8.js.map",
+    "main.7002a3bb.js.map": "/factorial-metrics/static/js/main.7002a3bb.js.map",
     "787.b253d5fb.chunk.js.map": "/factorial-metrics/static/js/787.b253d5fb.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.d2c521e8.js"
+    "static/js/main.7002a3bb.js"
   ]
 }
